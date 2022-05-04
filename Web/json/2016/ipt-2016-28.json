@@ -1,0 +1,11 @@
+{
+  "title": "2016>情報処理技術系>問題と解説>28 - 医療情報技師試験対策wiki",
+  "question": "問28\nネットワーク内のクライアントに通信を行うための設定情報を提供するプロトコルはどれか。番号を解答記入欄(21)にマークしなさい。\n1) DHCP\n2) HTTP\n3) NTP\n4) PPP\n5) SNMP",
+  "select1": "DHCP",
+  "select2": "HTTP",
+  "select3": "NTP",
+  "select4": "PPP",
+  "select5": "SNMP",
+  "answer": "1?",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2016>情報処理技術系>問題と解説>28"
+}

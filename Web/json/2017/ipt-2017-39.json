@@ -1,0 +1,11 @@
+{
+  "title": "2017>情報処理技術系>問題と解説>39 - 医療情報技師試験対策wiki",
+  "question": "問39\n問い合わせ高速化の仕組みを悪用して不正なドメインにアクセスさせる攻撃はどれか。\n\n1)DDos\n2)DDNS\n3)SQLインジェクション\n4)DNSキャッシュポイズニング\n5)クロスサイトスクリプティング\n",
+  "select1": "1)DDos",
+  "select2": "2)DDNS",
+  "select3": "3)SQLインジェクション",
+  "select4": "4)DNSキャッシュポイズニング",
+  "select5": "5)クロスサイトスクリプティング",
+  "answer": "4",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2017>情報処理技術系>問題と解説>39"
+}

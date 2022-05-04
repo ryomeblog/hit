@@ -1,0 +1,11 @@
+{
+  "title": "2015>情報処理技術系>問題と解説>27 - 医療情報技師試験対策wiki",
+  "question": "問27\n表“注射薬使用記録”に対して次のSQL文を実行した場合、得られる結果はどれか。\n\n　　　　SELECT COUNT(注射薬コード) FROM 注射薬使用記録;\n1)2\n2)5\n3)7\n4)9\n5)11\n",
+  "select1": "1)2",
+  "select2": "2)5",
+  "select3": "3)7",
+  "select4": "4)9",
+  "select5": "5)11",
+  "answer": "4",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2015>情報処理技術系>問題と解説>27"
+}

@@ -1,0 +1,11 @@
+{
+  "title": "2014>情報処理技術系>問題と解説>24 - 医療情報技師試験対策wiki",
+  "question": "問24\n無線LANの規格と説明の組み合わせで誤っているのはどれか。\n\n1) IEEE802.11a  - 最大転送速度 54Mbps\n2) IEEE802.11b  - 最大転送速度 11Mbps\n3) IEEE802.11g  - 周波数帯 2.4GHz\n4) IEEE802.11n  - 最大転送速度 1Gbps\n5) IEEE802.15.4 - 周波数帯 2.4GHz\n",
+  "select1": "IEEE802.11a  - 最大転送速度 54Mbps",
+  "select2": "IEEE802.11b  - 最大転送速度 11Mbps",
+  "select3": "IEEE802.11g  - 周波数帯 2.4GHz",
+  "select4": "IEEE802.11n  - 最大転送速度 1Gbps",
+  "select5": "IEEE802.15.4 - 周波数帯 2.4GHz",
+  "answer": "4",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2014>情報処理技術系>問題と解説>24"
+}
