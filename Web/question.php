@@ -65,10 +65,10 @@ $filelist = glob($dir . $_GET["kind"] . '*');
                                                     echo ('情報処理技術系');
                                                     break;
                                                 case 'mis':
-                                                    echo ('医学医療系');
+                                                    echo ('医療情報システム系');
                                                     break;
                                                 case 'mms':
-                                                    echo ('医療情報システム系');
+                                                    echo ('医学医療系');
                                                     break;
                                             }
                                             ?> 問<?php echo (substr($filename, 21, 2)) ?>
