@@ -78,8 +78,8 @@ $dirlist = glob($dir . '*', GLOB_ONLYDIR);
                         </div>
                         <div class="card-body">
                             <a href="./question.php?year=<?php echo (substr($dirname, -4)) ?>&kind=ipt" class="btn btn-primary">情報処理技術系</a>
-                            <a href="./question.php?year=<?php echo (substr($dirname, -4)) ?>&kind=mis" class="btn btn-warning">医学医療系</a>
-                            <a href="./question.php?year=<?php echo (substr($dirname, -4)) ?>&kind=mms" class="btn btn-success">医療情報システム系</a>
+                            <a href="./question.php?year=<?php echo (substr($dirname, -4)) ?>&kind=mms" class="btn btn-warning">医学医療系</a>
+                            <a href="./question.php?year=<?php echo (substr($dirname, -4)) ?>&kind=mis" class="btn btn-success">医療情報システム系</a>
                         </div>
                     </div>
                 <?php } ?>

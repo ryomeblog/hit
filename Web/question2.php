@@ -24,26 +24,52 @@ if (file_exists($jsonUrl)) {
     $json = mb_convert_encoding($json, 'UTF8', 'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
     $obj = json_decode($json, true);
 
-    if (strpos($obj["answer"], ',')) {
-        $answers = explode(",", $obj["answer"]);
-        if (!empty($_GET["select"])) {
-            $ansFlg = true;
-            foreach ($answers as $answer) {
-                $flg = false;
-                foreach ($_GET["select"] as $select) {
-                    if ($answer == $select) {
-                        $flg = true;
+    if (strpos($obj["answer"], ',') || strpos($obj["answer"], 'または')) {
+        if(strpos($obj["answer"], ',')){
+            $answers = explode(",", $obj["answer"]);
+
+            if (!empty($_GET["select"])) {
+                $ansFlg = true;
+                foreach ($answers as $answer) {
+                    $flg = false;
+                    foreach ($_GET["select"] as $select) {
+                        if ($answer == $select) {
+                            $flg = true;
+                        }
                     }
+                    $ansFlg = $ansFlg && $flg;
                 }
-                $ansFlg = $ansFlg && $flg;
+                if ($ansFlg) {
+                    $_SESSION['score'] = $_SESSION['score'] + 1;
+                    $_SESSION['total'] = $_SESSION['total'] + 1;
+                    $result = '<div class="alert alert-success" role="alert">正解です。</div>';
+                } else {
+                    $_SESSION['total'] = $_SESSION['total'] + 1;
+                    $result = '<div class="alert alert-danger" role="alert">不正解です。</div>';
+                }
             }
-            if ($ansFlg) {
-                $_SESSION['score'] = $_SESSION['score'] + 1;
-                $_SESSION['total'] = $_SESSION['total'] + 1;
-                $result = '<div class="alert alert-success" role="alert">正解です。</div>';
-            } else {
-                $_SESSION['total'] = $_SESSION['total'] + 1;
-                $result = '<div class="alert alert-danger" role="alert">不正解です。</div>';
+        }else{
+            $answers = explode("または", $obj["answer"]);
+
+            if (!empty($_GET["select"])) {
+                $ansFlg = false;
+                foreach ($answers as $answer) {
+                    $flg = false;
+                    foreach ($_GET["select"] as $select) {
+                        if ($answer == $select) {
+                            $flg = true;
+                        }
+                    }
+                    $ansFlg = $ansFlg || $flg;
+                }
+                if ($ansFlg) {
+                    $_SESSION['score'] = $_SESSION['score'] + 1;
+                    $_SESSION['total'] = $_SESSION['total'] + 1;
+                    $result = '<div class="alert alert-success" role="alert">正解です。</div>';
+                } else {
+                    $_SESSION['total'] = $_SESSION['total'] + 1;
+                    $result = '<div class="alert alert-danger" role="alert">不正解です。</div>';
+                }
             }
         }
     } else {
@@ -162,7 +188,7 @@ if (file_exists($jsonUrl)) {
                         } ?>
                         <?php echo "<p>問題：" . nl2br($obj["question"]) . "</p>" ?>
                         <br />
-                        <?php if (strpos($obj["answer"], ',')) { ?>
+                        <?php if (strpos($obj["answer"], ',') || strpos($obj["answer"], 'または')) { ?>
                             <form action="question2.php" method="get">
                                 <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
 
