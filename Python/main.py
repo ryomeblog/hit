@@ -100,6 +100,10 @@ def create_json(url, year, num, file_name):
 
 def create(year, question_ipt, question_mms, question_mis):
     try:
+        os.mkdir('./json')
+    except FileExistsError:
+        pass
+    try:
         os.mkdir('./json/' + str(year))
     except FileExistsError:
         pass
@@ -124,15 +128,6 @@ def create(year, question_ipt, question_mms, question_mis):
         create_json(url, year, str(num+1), 'mis')
 
 if __name__ == "__main__":
-    create('2021', 50, 50, 60)
-    create('2019', 50, 50, 60)
-    create('2018', 50, 50, 60)
-    create('2017', 50, 50, 60)
-    create('2016', 50, 50, 60)
-    create('2015', 50, 50, 60)
-    create('2014', 50, 50, 60)
-    create('2013', 50, 50, 60)
-    create('2012', 50, 50, 60)
-    create('2011', 50, 50, 60)
+    create('2022', 50, 50, 60)
 
 
