@@ -1,5 +1,8 @@
 # 医療情報技師試験対策サイト
 
+このリポジトリの詳しい使い方については以下を参照。
+https://qiita.com/ryome/items/9f9ae5a644b27fe6106e
+
 医療情報技師試験対策サイトは以下に公開しています。
 
 [http://homebit2019.php.xdomain.jp/](http://homebit2019.php.xdomain.jp/)
