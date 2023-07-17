@@ -114,7 +114,6 @@ def create(year, question_ipt, question_mms, question_mis):
         url = 'https://iryoujyouhou.wiki.fc2.com/wiki/' + str(year) + '>情報処理技術系>問題と解説>' + question
         create_json(url, year, str(num+1), 'ipt')
 
-
     # MMS
     for num in range(question_mms):
         question = str(num+1).zfill(2)
@@ -128,6 +127,13 @@ def create(year, question_ipt, question_mms, question_mis):
         create_json(url, year, str(num+1), 'mis')
 
 if __name__ == "__main__":
-    create('2022', 50, 50, 60)
-
-
+    create('2011', 50, 50, 60)
+    create('2012', 50, 50, 60)
+    create('2013', 50, 50, 60)
+    create('2014', 50, 50, 60)
+    create('2015', 50, 50, 60)
+    create('2016', 50, 50, 60)
+    create('2017', 50, 50, 60)
+    create('2018', 50, 50, 60)
+    create('2019', 50, 50, 60)
+    create('2021', 50, 50, 60)

@@ -68,6 +68,10 @@ $dirlist = glob($dir . '*', GLOB_ONLYDIR);
                         以下のサイトを参考にして作っています。<br />
                         <br />
                         <a href="https://iryoujyouhou.wiki.fc2.com/wiki/トップページ"> https://iryoujyouhou.wiki.fc2.com/wiki/トップページ</a>
+                        <br />
+                        以下にこのサイトを作るに至った経緯などを記載しています。ご意見やご感想等もコメントでお待ちしています。<br />
+                        <br />
+                        <a href="https://qiita.com/ryome/items/9f9ae5a644b27fe6106e"> 医療情報技師の過去問サイトを爆速で作った話【Python／PHP】</a>
                     </div>
                 </div>
                 <br />
