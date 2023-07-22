@@ -6,6 +6,6 @@
   "select3": "3)診断書などの文書作成の補助",
   "select4": "4)医師の指示のもとでの患者移送",
   "select5": "5)カンファレンスのための準備作業",
-  "answer": "1または4",
+  "answer": "1,4",
   "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2019>医療情報システム系>問題と解説>09"
 }
