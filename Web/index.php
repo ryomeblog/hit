@@ -64,14 +64,29 @@ $dirlist = glob($dir . '*', GLOB_ONLYDIR);
                         <h5 class="card-title">このサイトについて</h5>
                     </div>
                     <div class="card-body">
-                        このサイトは医療情報技師の勉強をするために作りました。<br />
+                        このサイトは医療情報技師の勉強をするために作りました。
+                        <br /><br />
                         以下のサイトを参考にして作っています。<br />
-                        <br />
                         <a href="https://iryoujyouhou.wiki.fc2.com/wiki/トップページ"> https://iryoujyouhou.wiki.fc2.com/wiki/トップページ</a>
                         <br />
                         以下にこのサイトを作るに至った経緯などを記載しています。ご意見やご感想等もコメントでお待ちしています。<br />
                         <br />
                         <a href="https://qiita.com/ryome/items/9f9ae5a644b27fe6106e"> 医療情報技師の過去問サイトを爆速で作った話【Python／PHP】</a>
+                        <br />
+                        <br />
+                        <h3>以下、医療情報技師を受験する方は必見動画です！！！</h3>
+                        <br />
+                        <br />
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/f25MnDhmHWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/eXPo7fob8po" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <br />
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/tdOdW9i7Ggc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jXcqvf85Y2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <br />
+                        <br />
+                        徳田 杏さんの「<b>100日後に医療情報技師を受けるSE</b>」もおすすめです。
+                        <br />
+                        <a href="https://note.com/exitanz9/m/m0339a82cdd8a">100日後に医療情報技師を受けるSE</a>
                     </div>
                 </div>
                 <br />
