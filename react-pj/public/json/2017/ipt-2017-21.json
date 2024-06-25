@@ -1,0 +1,11 @@
+{
+  "title": "2017>情報処理技術系>問題と解説>21 - 医療情報技師試験対策wiki",
+  "question": "問21\n表&quot;外来受診記録&quot;に対して次のSQL文を実行したとき、得られるデータの行数はどれか。\n\nSELECT 受診科 FROM 外来受診記録\nGROUP BY 受診科\nHAVING COUNT(*) &gt;= 3;\n\n1)1\n2)2\n3)3\n4)4\n5)5\n",
+  "select1": "1)1",
+  "select2": "2)2",
+  "select3": "3)3",
+  "select4": "4)4",
+  "select5": "5)5",
+  "answer": "2",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2017>情報処理技術系>問題と解説>21"
+}

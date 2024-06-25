@@ -1,0 +1,11 @@
+{
+  "title": "2011>情報処理技術系>問題と解説>10 - 医療情報技師試験対策wiki",
+  "question": "問10\nプログラミング言語について誤っているのはどれか。\n1)JavaScriptはスクリプト言語である\n2)Javaはオブジェクト指向言語である\n3)BASICはインタープリタ方式の言語である\n4)FORTRANは科学技術向けの高級言語である\n5)XMLは手続き型のプログラミング言語である\n",
+  "select1": "1)JavaScriptはスクリプト言語である",
+  "select2": "2)Javaはオブジェクト指向言語である",
+  "select3": "3)BASICはインタープリタ方式の言語である",
+  "select4": "4)FORTRANは科学技術向けの高級言語である",
+  "select5": "5)XMLは手続き型のプログラミング言語である",
+  "answer": "5",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2011>情報処理技術系>問題と解説>10"
+}

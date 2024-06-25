@@ -1,0 +1,11 @@
+{
+  "title": "2019>情報処理技術系>問題と解説>24 - 医療情報技師試験対策wiki",
+  "question": "問24\n電子メールの受信に使うサービス名称とポート番号の組み合わせで正しいのはどれか\n1)POP3   - 993\n2)SMTP   - 465\n3)POP3s  - 995\n4)SMTPs  -  25\n5)IMAP4s - 110",
+  "select1": "1)POP3   - 993",
+  "select2": "2)SMTP   - 465",
+  "select3": "3)POP3s  - 995",
+  "select4": "4)SMTPs  -  25",
+  "select5": "5)IMAP4s - 110",
+  "answer": "3",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2019>情報処理技術系>問題と解説>24"
+}

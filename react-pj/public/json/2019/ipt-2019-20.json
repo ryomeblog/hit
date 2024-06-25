@@ -1,0 +1,11 @@
+{
+  "title": "2019>情報処理技術系>問題と解説>20 - 医療情報技師試験対策wiki",
+  "question": "問20\n表&quot;材料伝票テーブル&quot;から数量順に並べ替えるSQL文の(　　)内に入れる語句として適切なものはどれか。\n\nSELECT * FROM 材料伝票テーブル (　　) 数量;\n\n1) IN\n2) JOIN\n3) LIKE\n4) GROUP BY\n5) ORDER BY\n",
+  "select1": "IN",
+  "select2": "JOIN",
+  "select3": "LIKE",
+  "select4": "GROUP BY",
+  "select5": "ORDER BY",
+  "answer": "5",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2019>情報処理技術系>問題と解説>20"
+}

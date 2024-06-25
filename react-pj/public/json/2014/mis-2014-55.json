@@ -1,0 +1,11 @@
+{
+  "title": "2014>医療情報システム系>問題と解説>55 - 医療情報技師試験対策wiki",
+  "question": "問55\nHL7について誤っているのはどれか。\n1) 放射線画像の伝送規格を定めている。\n2) 名称はOSIの第7層に由来している。\n3)HL7 v3はXML形式に基づいている。\n4) SS-MIXの標準化ストレージに採用されている。\n5) HL7 v2.5はEncoding rule 7形式に基づいている。",
+  "select1": "放射線画像の伝送規格を定めている。",
+  "select2": "名称はOSIの第7層に由来している。",
+  "select3": "3)HL7 v3はXML形式に基づいている。",
+  "select4": "SS-MIXの標準化ストレージに採用されている。",
+  "select5": "HL7 v2.5はEncoding rule 7形式に基づいている。",
+  "answer": "1",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2014>医療情報システム系>問題と解説>55"
+}
