@@ -1,10 +1,4 @@
-import React, {
-  useState,
-  createContext,
-  useContext,
-  useEffect,
-  useMemo,
-} from 'react';
+import React, { useState, createContext, useContext, useEffect, useMemo } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,7 +11,7 @@ function App() {
 
   const contextValue = useMemo(
     () => ({ score, setScore, total, setTotal }),
-    [score, setScore, total, setTotal],
+    [score, setScore, total, setTotal]
   );
 
   useEffect(() => {
@@ -54,11 +48,7 @@ function App() {
             >
               医療情報技師試験対策サイト
             </button>
-            <button
-              className="btn btn-secondary"
-              onClick={resetScores}
-              type="button"
-            >
+            <button className="btn btn-secondary" onClick={resetScores} type="button">
               リセット
             </button>
             <ul className="navbar-nav">
@@ -67,8 +57,7 @@ function App() {
                   正解数： <span className="badge bg-secondary">{score}問</span>
                 </button>
                 <button type="button" className="btn btn-info">
-                  トータル：{' '}
-                  <span className="badge bg-secondary">{total}問</span>
+                  トータル： <span className="badge bg-secondary">{total}問</span>
                 </button>
               </li>
             </ul>
@@ -154,27 +143,16 @@ function App() {
               {years.map((yearItem) => (
                 <div className="card" key={yearItem}>
                   <div className="card-header">
-                    <h5 className="card-title">
-                      {yearItem}年度 医療情報技師試験対策
-                    </h5>
+                    <h5 className="card-title">{yearItem}年度 医療情報技師試験対策</h5>
                   </div>
                   <div className="card-body">
-                    <Link
-                      to={`/Question?year=${yearItem}&kind=ipt`}
-                      className="btn btn-primary"
-                    >
+                    <Link to={`/Question?year=${yearItem}&kind=ipt`} className="btn btn-primary">
                       情報処理技術系
                     </Link>
-                    <Link
-                      to={`/Question?year=${yearItem}&kind=mms`}
-                      className="btn btn-warning"
-                    >
+                    <Link to={`/Question?year=${yearItem}&kind=mms`} className="btn btn-warning">
                       医学医療系
                     </Link>
-                    <Link
-                      to={`/Question?year=${yearItem}&kind=mis`}
-                      className="btn btn-success"
-                    >
+                    <Link to={`/Question?year=${yearItem}&kind=mis`} className="btn btn-success">
                       医療情報システム系
                     </Link>
                   </div>

@@ -1,0 +1,11 @@
+{
+  "title": "2011>情報処理技術系>問題と解説>33 - 医療情報技師試験対策wiki",
+  "question": "問33\n無線LANのセキュリティを高めるのに<span style=\"text-decoration:underline;\" class=\"font\">効果がないのはどれか。番号を解答記入欄( 34 )にマークしなさい。\n\n1) IEEE802.1x認証を用いる。\n2) WPA2を用いる設定にする\n3) IEEE802.11nのみを利用する\n4) MACアドレスによるアクセス制限をする。\n5) SSIDを公開しないステルスモードにする。\n",
+  "select1": "IEEE802.1x認証を用いる。",
+  "select2": "WPA2を用いる設定にする",
+  "select3": "IEEE802.11nのみを利用する",
+  "select4": "MACアドレスによるアクセス制限をする。",
+  "select5": "SSIDを公開しないステルスモードにする。",
+  "answer": "3",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2011>情報処理技術系>問題と解説>33"
+}

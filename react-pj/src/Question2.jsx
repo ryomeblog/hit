@@ -21,9 +21,7 @@ function Question2() {
   useEffect(() => {
     const fetchQuestionData = async () => {
       try {
-        const response = await fetch(
-          `/json/${year}/${kind}-${year}-${num}.json`,
-        );
+        const response = await fetch(`/json/${year}/${kind}-${year}-${num}.json`);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -40,9 +38,7 @@ function Question2() {
   const handleAnswerChange = (event) => {
     const { value } = event.target;
     setSelectedAnswers((prev) =>
-      prev.includes(value)
-        ? prev.filter((answer) => answer !== value)
-        : [...prev, value],
+      prev.includes(value) ? prev.filter((answer) => answer !== value) : [...prev, value]
     );
   };
 
@@ -83,6 +79,15 @@ function Question2() {
         <div className="col">
           <div className="card">
             <div className="card-header">
+              <div className="d-flex justify-content-start mb-3">
+                <button
+                  type="button"
+                  className="btn btn-outline-secondary"
+                  onClick={() => navigate('/')}
+                >
+                  ← 戻る
+                </button>
+              </div>
               <h5 className="card-title">
                 医療情報技師試験 {kind === 'ipt' && '情報処理技術系'}
                 {kind === 'mis' && '医療情報システム系'}
@@ -115,14 +120,18 @@ function Question2() {
                 {Object.keys(questionData)
                   .filter((key) => key.startsWith('select'))
                   .map((key) => (
-                    <div key={key}>
+                    <div key={key} className="mb-2">
                       <input
                         type="checkbox"
+                        className="btn-check"
                         id={key}
                         value={key.replace('select', '')}
                         onChange={handleAnswerChange}
+                        autoComplete="off"
                       />
-                      <label htmlFor={key}>{questionData[key]}</label>
+                      <label className="btn btn-outline-primary w-100 text-start" htmlFor={key}>
+                        {questionData[key]}
+                      </label>
                     </div>
                   ))}
                 <button type="submit" className="btn btn-primary">
@@ -137,11 +146,7 @@ function Question2() {
                     // eslint-disable-next-line react/no-danger
                     dangerouslySetInnerHTML={{ __html: result.text }}
                   />
-                  <a
-                    href={result.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={result.url} target="_blank" rel="noopener noreferrer">
                     解説リンク
                   </a>
                 </div>
@@ -152,7 +157,7 @@ function Question2() {
                   className="btn btn-secondary"
                   onClick={() =>
                     navigate(
-                      `/Question2?year=${year}&kind=${kind}&num=${formatNum(Number(num) - 1)}`,
+                      `/Question2?year=${year}&kind=${kind}&num=${formatNum(Number(num) - 1)}`
                     )
                   }
                   disabled={num <= 1}
@@ -168,7 +173,7 @@ function Question2() {
                     setQuestionData(null);
                     setNum(formatNum(Number(num) + 1));
                     navigate(
-                      `/Question2?year=${year}&kind=${kind}&num=${formatNum(Number(num) + 1)}`,
+                      `/Question2?year=${year}&kind=${kind}&num=${formatNum(Number(num) + 1)}`
                     );
                   }}
                 >

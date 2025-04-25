@@ -1,0 +1,11 @@
+{
+  "title": "2023>医療情報システム系>問題と解説>49 - 医療情報技師試験対策wiki",
+  "question": "問49\n正しい組み合わせはどれか。\n\n1) DICOM ー CSV\n2) CDA R2 ー HTML\n3) HL7 FHIR ー JSON\n4) HL7 V2 メッセージ ー PDF\n5) HL7 V3 メッセージ ー デリミタ",
+  "select1": "DICOM ー CSV",
+  "select2": "CDA R2 ー HTML",
+  "select3": "HL7 FHIR ー JSON",
+  "select4": "HL7 V2 メッセージ ー PDF",
+  "select5": "HL7 V3 メッセージ ー デリミタ",
+  "answer": "3",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2023>医療情報システム系>問題と解説>49"
+}

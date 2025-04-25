@@ -1,0 +1,11 @@
+{
+  "title": "2022>情報処理技術系>問題と解説>18 - 医療情報技師試験対策wiki",
+  "question": "問18\n周波数成分の最大値が400Hzのアナログ信号をデジタル信号へ変換する場合、必要な最低サンプリング周波数はどれか。\n\n1) 100Hz\n2) 200Hz\n3) 400Hz\n4) 800Hz\n5) 1,600Hz\n",
+  "select1": "100Hz",
+  "select2": "200Hz",
+  "select3": "400Hz",
+  "select4": "800Hz",
+  "select5": "1,600Hz",
+  "answer": "4",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2022>情報処理技術系>問題と解説>18"
+}

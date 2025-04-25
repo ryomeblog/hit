@@ -1,0 +1,11 @@
+{
+  "title": "2022>情報処理技術系>問題と解説>13 - 医療情報技師試験対策wiki",
+  "question": "問13\n図のフローチャートで、x=17、y＝3のとき、a、bの正しい出力の組み合わせはどれか。\n\n<a href=\"/image/IMG_7019.jpg\" target=\"_blank\"><img alt=\"IMG_7019.jpg\" src=\"/thumb/IMG_7019.jpg?1745507868\" /></a>\n※クリックで画像拡大\n\n1) a = 2、　b = 5\n2) a = 4、　b = 3\n3) a = 5、　b = 2\n4) a = 6、　b = 5\n5) a = 7、　b = 2\n",
+  "select1": "a = 2、　b = 5",
+  "select2": "a = 4、　b = 3",
+  "select3": "a = 5、　b = 2",
+  "select4": "a = 6、　b = 5",
+  "select5": "a = 7、　b = 2",
+  "answer": "3",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2022>情報処理技術系>問題と解説>13"
+}

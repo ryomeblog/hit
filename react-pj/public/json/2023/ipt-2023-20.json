@@ -1,0 +1,11 @@
+{
+  "title": "2023>情報処理技術系>問題と解説>20 - 医療情報技師試験対策wiki",
+  "question": "問20\n複数の業務システムに格納されたデータの検索や分析を可能とするように統合したデータベースはどれか。\n\n1) DWH\n2) ETL\n3) OLAP\n4) BIツール\n5) ダッシュボード\n",
+  "select1": "DWH",
+  "select2": "ETL",
+  "select3": "OLAP",
+  "select4": "BIツール",
+  "select5": "ダッシュボード",
+  "answer": "1",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2023>情報処理技術系>問題と解説>20"
+}
