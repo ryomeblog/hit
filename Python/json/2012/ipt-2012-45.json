@@ -1,0 +1,11 @@
+{
+  "title": "2012>情報処理技術系>問題と解説>45 - 医療情報技師試験対策wiki",
+  "question": "問４５\nサービスの提供状態や設定を確認するためにサーバにアクセスするコマンドはどれか。\n\n1) ipconfig(ifconfig)\n2) nsllokup\n3) ping\n4) telnet\n5) tracert(traceroute)\n",
+  "select1": "ipconfig(ifconfig)",
+  "select2": "nsllokup",
+  "select3": "ping",
+  "select4": "telnet",
+  "select5": "tracert(traceroute)",
+  "answer": "4",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2012>情報処理技術系>問題と解説>45"
+}

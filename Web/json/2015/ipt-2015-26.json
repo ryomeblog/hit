@@ -1,0 +1,11 @@
+{
+  "title": "2015>情報処理技術系>問題と解説>26 - 医療情報技師試験対策wiki",
+  "question": "問26\nSQLコマンドのうち、データを挿入するコマンドはどれか。\n1)CREATE\n2)DELETE\n3)INSERT\n4)SELECT\n5)UPDATE",
+  "select1": "1)CREATE",
+  "select2": "2)DELETE",
+  "select3": "3)INSERT",
+  "select4": "4)SELECT",
+  "select5": "5)UPDATE",
+  "answer": "3",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2015>情報処理技術系>問題と解説>26"
+}

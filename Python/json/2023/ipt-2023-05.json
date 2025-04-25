@@ -1,0 +1,11 @@
+{
+  "title": "2023>情報処理技術系>問題と解説>05 - 医療情報技師試験対策wiki",
+  "question": "問5\nサンプリング周波数20Hz、16bitで量子化された2秒分のデータ量はどれか。\n\n1) 40Bytes\n2) 80Bytes\n3) 160Bytes\n4) 320Bytes\n5) 640Bytes\n",
+  "select1": "40Bytes",
+  "select2": "80Bytes",
+  "select3": "160Bytes",
+  "select4": "320Bytes",
+  "select5": "640Bytes",
+  "answer": "2",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2023>情報処理技術系>問題と解説>05"
+}

@@ -1,0 +1,11 @@
+{
+  "title": "2014>情報処理技術系>問題と解説>17 - 医療情報技師試験対策wiki",
+  "question": "問17\n以下のURLの8080は何を表す数字か。\n<a href=\"/jump/http/www.jami.jp%3A8080%2Fhcit%2Findex.html\" title=\"http://www.jami.jp:8080/hcit/index.html\" class=\"jump\">http://www.jami.jp:8080/hcit/index.html</a>\n\n1) 共通鍵\n2) ユーザ数\n3) ハッシュ値\n4) ポート番号\n5) IPアドレス\n",
+  "select1": "共通鍵",
+  "select2": "ユーザ数",
+  "select3": "ハッシュ値",
+  "select4": "ポート番号",
+  "select5": "IPアドレス",
+  "answer": "4",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2014>情報処理技術系>問題と解説>17"
+}

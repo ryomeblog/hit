@@ -1,0 +1,11 @@
+{
+  "title": "2021>情報処理技術系>問題と解説>17 - 医療情報技師試験対策wiki",
+  "question": "問17\n1から20の整数の和を求めるフローチャートの(①)に入るのはどれか。(図あり)\n\n1) i ← i+1\n2) i ← i+x\n3) i ← i-1\n4) x ← x+1\n5) x ← x/i\n",
+  "select1": "i ← i+1",
+  "select2": "i ← i+x",
+  "select3": "i ← i-1",
+  "select4": "x ← x+1",
+  "select5": "x ← x/i",
+  "answer": "1",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2021>情報処理技術系>問題と解説>17"
+}

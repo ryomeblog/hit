@@ -1,0 +1,11 @@
+{
+  "title": "2017>医療情報システム系>問題と解説>52 - 医療情報技師試験対策wiki",
+  "question": "問52\n保健医療情報分野の<span style=\"text-decoration:underline;\">標準規格（厚生労働省標準規格）でないのはどれか。\n\n1)ICD10対応標準病名マスター\n2)JAHIS臨床検査データ交換規約\n3)JAHIS HPKI電子認証ガイドライン\n4)SS-MIX2ストレージ仕様書および構築ガイドライン\n5)IHE統合プロファイル「可搬型医用画像」およびその運用指針\n",
+  "select1": "1)ICD10対応標準病名マスター",
+  "select2": "2)JAHIS臨床検査データ交換規約",
+  "select3": "3)JAHIS HPKI電子認証ガイドライン",
+  "select4": "4)SS-MIX2ストレージ仕様書および構築ガイドライン",
+  "select5": "5)IHE統合プロファイル「可搬型医用画像」およびその運用指針",
+  "answer": "3",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2017>医療情報システム系>問題と解説>52"
+}

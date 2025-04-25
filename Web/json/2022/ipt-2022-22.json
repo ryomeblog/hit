@@ -1,0 +1,11 @@
+{
+  "title": "2022>情報処理技術系>問題と解説>22 - 医療情報技師試験対策wiki",
+  "question": "問22\n全問の表「薬剤請求記録」の主キーとなるのはどれか。\n\n表“薬剤請求記録”（再掲）\n\n\n<table class=\"table\" cellspacing=\"0\" cellpadding=\"0\">\n    <tr>\n        <td>薬剤請求コード</td>\n        <td>病棟</td>\n        <td>請求日</td>\n        <td>薬剤コード</td>\n        <td>数量</td>\n    </tr>\n    <tr>\n        <td>13289265</td>\n        <td>E13</td>\n        <td>2022-03-29</td>\n        <td>E0032</td>\n        <td>1</td>\n    </tr>\n    <tr>\n        <td>13289266</td>\n        <td>W08</td>\n        <td>2022-03-29</td>\n        <td>G0823</td>\n        <td>1</td>\n    </tr>\n    <tr>\n        <td>13289267</td>\n        <td>E13</td>\n        <td>2022-03-29</td>\n        <td>A0008</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>13289268</td>\n        <td>E07</td>\n        <td>2022-03-29</td>\n        <td>E0032</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>13289269</td>\n        <td>W11</td>\n        <td>2022-03-29</td>\n        <td>A0008</td>\n        <td>1</td>\n    </tr>\n    <tr>\n        <td>13289270</td>\n        <td>W08</td>\n        <td>2022-03-30</td>\n        <td>A0008</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>13289271</td>\n        <td>E13</td>\n        <td>2022-03-30</td>\n        <td>G0823</td>\n        <td>1</td>\n    </tr>\n    <tr>\n        <td>13289272</td>\n        <td>W07</td>\n        <td>2022-03-30</td>\n        <td>G0823</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>13289273</td>\n        <td>E13</td>\n        <td>2022-03-30</td>\n        <td>A0008</td>\n        <td>1</td>\n    </tr>\n</table>\n\n\n\n1) 病棟\n2) 薬剤コード\n3) 薬剤請求コード\n4) 病棟と薬剤コード\n5) 請求日と薬剤コード\n",
+  "select1": "病棟",
+  "select2": "薬剤コード",
+  "select3": "薬剤請求コード",
+  "select4": "病棟と薬剤コード",
+  "select5": "請求日と薬剤コード",
+  "answer": "3",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2022>情報処理技術系>問題と解説>22"
+}

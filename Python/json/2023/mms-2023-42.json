@@ -1,0 +1,11 @@
+{
+  "title": "2023>医学医療系>問題と解説>42 - 医療情報技師試験対策wiki",
+  "question": "問42\nある検査の結果とある疾病の有無との関係を表に示す。この検査における特異度はどれか。\n\n\n\n<table class=\"table\" cellspacing=\"0\" cellpadding=\"0\">\n    <tr>\n        <td>&nbsp;</td>\n        <td>疾病有</td>\n        <td>疾病無</td>\n        <td>計</td>\n    </tr>\n    <tr>\n        <td>検査結果陽性</td>\n        <td>33</td>\n        <td>2</td>\n        <td>35</td>\n    </tr>\n    <tr>\n        <td>検査結果陰性</td>\n        <td>18</td>\n        <td>56</td>\n        <td>74</td>\n    </tr>\n    <tr>\n        <td>計</td>\n        <td>51</td>\n        <td>58</td>\n        <td>109</td>\n    </tr>\n</table>\n\n\n\n1) 0.65\n2) 0.76\n3) 0.88\n4) 0.94\n5) 0.97",
+  "select1": "0.65",
+  "select2": "0.76",
+  "select3": "0.88",
+  "select4": "0.94",
+  "select5": "0.97",
+  "answer": "5",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2023>医学医療系>問題と解説>42"
+}

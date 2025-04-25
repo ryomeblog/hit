@@ -1,0 +1,11 @@
+{
+  "title": "2022>情報処理技術系>問題と解説>21 - 医療情報技師試験対策wiki",
+  "question": "問21\n表「薬剤請求記録」に対して以下のSQLを実行して得られる結果はどれか。\n\nSELECT 病棟, 薬剤コード, COUNT(数量) FROM 薬剤請求記録 WHERE 病棟='E13' GROUP BY 薬剤コード;\n\n表“薬剤請求記録”\n\n\n<table class=\"table\" cellspacing=\"0\" cellpadding=\"0\">\n    <tr>\n        <td>薬剤請求コード</td>\n        <td>病棟</td>\n        <td>請求日</td>\n        <td>薬剤コード</td>\n        <td>数量</td>\n    </tr>\n    <tr>\n        <td>13289265</td>\n        <td>E13</td>\n        <td>2022-03-29</td>\n        <td>E0032</td>\n        <td>1</td>\n    </tr>\n    <tr>\n        <td>13289266</td>\n        <td>W08</td>\n        <td>2022-03-29</td>\n        <td>G0823</td>\n        <td>1</td>\n    </tr>\n    <tr>\n        <td>13289267</td>\n        <td>E13</td>\n        <td>2022-03-29</td>\n        <td>A0008</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>13289268</td>\n        <td>E07</td>\n        <td>2022-03-29</td>\n        <td>E0032</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>13289269</td>\n        <td>W11</td>\n        <td>2022-03-29</td>\n        <td>A0008</td>\n        <td>1</td>\n    </tr>\n    <tr>\n        <td>13289270</td>\n        <td>W08</td>\n        <td>2022-03-30</td>\n        <td>A0008</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>13289271</td>\n        <td>E13</td>\n        <td>2022-03-30</td>\n        <td>G0823</td>\n        <td>1</td>\n    </tr>\n    <tr>\n        <td>13289272</td>\n        <td>W07</td>\n        <td>2022-03-30</td>\n        <td>G0823</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>13289273</td>\n        <td>E13</td>\n        <td>2022-03-30</td>\n        <td>A0008</td>\n        <td>1</td>\n    </tr>\n</table>\n\n\n\n1) 病棟別・薬剤別の請求数量\n2) 指定した病棟の薬剤別の請求件数\n3) 指定した病棟の薬剤別の請求数量\n4) 指定した薬剤の病棟別の請求件数\n5) 指定した薬剤の病棟別の請求数量\n",
+  "select1": "病棟別・薬剤別の請求数量",
+  "select2": "指定した病棟の薬剤別の請求件数",
+  "select3": "指定した病棟の薬剤別の請求数量",
+  "select4": "指定した薬剤の病棟別の請求件数",
+  "select5": "指定した薬剤の病棟別の請求数量",
+  "answer": "2",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2022>情報処理技術系>問題と解説>21"
+}

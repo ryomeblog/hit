@@ -1,0 +1,11 @@
+{
+  "title": "2021>医学医療系>問題と解説>46 - 医療情報技師試験対策wiki",
+  "question": "問46\n母集団の分布を仮定せずに行える検定はどれか。(2つ)\n\n1) F検定\n2) 符号検定\n3) 分散分析\n4) カイ二乗検定\n5) Wilcoxonの順位和検定\n",
+  "select1": "F検定",
+  "select2": "符号検定",
+  "select3": "分散分析",
+  "select4": "カイ二乗検定",
+  "select5": "Wilcoxonの順位和検定",
+  "answer": "2,5",
+  "url": "https://iryoujyouhou.wiki.fc2.com/wiki/2021>医学医療系>問題と解説>46"
+}
