@@ -91,7 +91,7 @@ function Question2() {
                 <button
                   type="button"
                   className="btn btn-outline-secondary"
-                  onClick={() => navigate('/')}
+                  onClick={() => navigate('/hit')}
                 >
                   ← 戻る
                 </button>
@@ -167,7 +167,7 @@ function Question2() {
                   onClick={() => {
                     const prevNum = formatNum(Number(num) - 1);
                     setNum(prevNum);
-                    navigate(`/Question2?year=${year}&kind=${kind}&num=${prevNum}`);
+                    navigate(`/hit/Question2?year=${year}&kind=${kind}&num=${prevNum}`);
                   }}
                   disabled={num <= 1}
                 >
@@ -181,7 +181,7 @@ function Question2() {
                     setSelectedAnswers([]);
                     setResult(null);
                     setNum(nextNum);
-                    navigate(`/Question2?year=${year}&kind=${kind}&num=${nextNum}`);
+                    navigate(`/hit/Question2?year=${year}&kind=${kind}&num=${nextNum}`);
                   }}
                 >
                   次の問題

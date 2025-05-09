@@ -44,7 +44,7 @@ function App() {
             <button
               className="navbar-brand btn btn-link"
               type="button"
-              onClick={() => navigate('/')}
+              onClick={() => navigate('/hit')}
             >
               医療情報技師試験対策サイト
             </button>

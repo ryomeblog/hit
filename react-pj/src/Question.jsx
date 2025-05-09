@@ -76,7 +76,11 @@ function Question() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <button className="navbar-brand btn btn-link" type="button" onClick={() => navigate('/')}>
+          <button
+            className="navbar-brand btn btn-link"
+            type="button"
+            onClick={() => navigate('/hit')}
+          >
             医療情報技師試験対策サイト
           </button>
           <button className="btn btn-secondary" onClick={handleScoreReset} type="button">
@@ -101,7 +105,7 @@ function Question() {
               <button
                 type="button"
                 className="btn btn-outline-secondary"
-                onClick={() => navigate('/')}
+                onClick={() => navigate('/hit')}
               >
                 ← 戻る
               </button>
