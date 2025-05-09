@@ -161,7 +161,7 @@ function Question() {
                 </div>
                 <div className="card-body">
                   <Link
-                    to={`/Question2?year=${year}&kind=${kind}&num=${String(question.problem_number).padStart(2, '0')}`}
+                    to={`/hit/Question2?year=${year}&kind=${kind}&num=${String(question.problem_number).padStart(2, '0')}`}
                     className="btn btn-primary"
                   >
                     問題へ

@@ -146,13 +146,22 @@ function App() {
                     <h5 className="card-title">{yearItem}年度 医療情報技師試験対策</h5>
                   </div>
                   <div className="card-body">
-                    <Link to={`/Question?year=${yearItem}&kind=ipt`} className="btn btn-primary">
+                    <Link
+                      to={`/hit/Question?year=${yearItem}&kind=ipt`}
+                      className="btn btn-primary"
+                    >
                       情報処理技術系
                     </Link>
-                    <Link to={`/Question?year=${yearItem}&kind=mms`} className="btn btn-warning">
+                    <Link
+                      to={`/hit/Question?year=${yearItem}&kind=mms`}
+                      className="btn btn-warning"
+                    >
                       医学医療系
                     </Link>
-                    <Link to={`/Question?year=${yearItem}&kind=mis`} className="btn btn-success">
+                    <Link
+                      to={`/hit/Question?year=${yearItem}&kind=mis`}
+                      className="btn btn-success"
+                    >
                       医療情報システム系
                     </Link>
                   </div>

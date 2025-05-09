@@ -19,9 +19,11 @@ function Main() {
         <Router>
           <Routes>
             <Route path="/" element={<App />} />
-            <Route path="/hit" element={<App />} />
             <Route path="/Question" element={<Question />} />
             <Route path="/Question2" element={<Question2 />} />
+            <Route path="/hit" element={<App />} />
+            <Route path="/hit/Question" element={<Question />} />
+            <Route path="/hit/Question2" element={<Question2 />} />
           </Routes>
         </Router>
       </ScoreContext.Provider>
