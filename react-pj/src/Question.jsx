@@ -6,39 +6,31 @@ import { ScoreContext } from './App';
 function Question() {
   const navigate = useNavigate();
   const { score, setScore, total, setTotal } = useContext(ScoreContext);
-  const [year, setYear] = useState('2023');
+  const [year, setYear] = useState('2024');
   const [kind, setKind] = useState('ipt');
   const [years, setYears] = useState([]);
   const [files, setFiles] = useState([]);
 
-  const fetchFiles = async (currentYear, currentKind) => {
+  const fetchQuestions = async (currentYear, currentKind) => {
     try {
-      const response = await fetch('/json/q.json');
+      const response = await fetch('/hit/json/merged_output.json');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
       const data = await response.json();
-      const yearData = data.find((item) => item.year === currentYear);
-      if (yearData) {
-        const filteredFiles = yearData.files
-          .filter((file) => file.startsWith(`${currentKind}-${currentYear}`))
-          .sort((a, b) => {
-            const aNum = parseInt(a.split('-')[2].split('.')[0], 10);
-            const bNum = parseInt(b.split('-')[2].split('.')[0], 10);
-            return aNum - bNum;
-          });
-        setFiles(filteredFiles);
-      }
+      const filteredQuestions = data
+        .filter((q) => q.year.toString() === currentYear && q.category === currentKind)
+        .sort((a, b) => a.problem_number - b.problem_number);
+      setFiles(filteredQuestions);
     } catch (error) {
-      console.error('Error fetching files:', error);
+      console.error('Error fetching questions:', error);
     }
-    return [];
   };
 
   useEffect(() => {
     const fetchYears = async () => {
       try {
-        const response = await fetch('/json/years.json');
+        const response = await fetch('/hit/json/years.json');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -60,11 +52,11 @@ function Question() {
     if (queryKind) {
       setKind(queryKind);
     }
-    fetchFiles(queryYear, queryKind);
+    fetchQuestions(queryYear || '2024', queryKind || 'ipt');
   }, []);
 
   useEffect(() => {
-    fetchFiles(year, kind);
+    fetchQuestions(year, kind);
   }, [year, kind]);
 
   const handleYearChange = (event) => {
@@ -153,19 +145,19 @@ function Question() {
               </div>
             </div>
 
-            {files.map((fileItem) => (
-              <div className="card" key={fileItem}>
+            {files.map((question) => (
+              <div className="card" key={question.problem_number}>
                 <div className="card-header">
                   <h5 className="card-title">
                     医療情報技師試験
                     {kind === 'ipt' && '情報処理技術系'}
                     {kind === 'mis' && '医療情報システム系'}
-                    {kind === 'mms' && '医学医療系'}問{fileItem.match(/-(\d+)-(\d+)\.json$/)[2]}
+                    {kind === 'mms' && '医学医療系'}問{question.problem_number}
                   </h5>
                 </div>
                 <div className="card-body">
                   <Link
-                    to={`/Question2?year=${year}&kind=${kind}&num=${fileItem.match(/-(\d+)-(\d+)\.json$/)[2]}`}
+                    to={`/Question2?year=${year}&kind=${kind}&num=${String(question.problem_number).padStart(2, '0')}`}
                     className="btn btn-primary"
                   >
                     問題へ

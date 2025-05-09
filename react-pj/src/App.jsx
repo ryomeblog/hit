@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const fetchYears = async () => {
       try {
-        const response = await fetch('/json/years.json');
+        const response = await fetch('/hit/json/years.json');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -99,7 +99,7 @@ function App() {
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
+                    allowFullScreen
                   />
                   <iframe
                     width="560"
@@ -108,7 +108,7 @@ function App() {
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
+                    allowFullScreen
                   />
                   <br />
                   <iframe
@@ -118,7 +118,7 @@ function App() {
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
+                    allowFullScreen
                   />
                   <iframe
                     width="560"
@@ -127,7 +127,7 @@ function App() {
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
+                    allowFullScreen
                   />
                   <br />
                   <br />

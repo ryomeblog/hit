@@ -11,7 +11,7 @@ function Question2() {
   const navigate = useNavigate();
   const { score, setScore, total, setTotal } = useContext(ScoreContext);
   const query = useQuery();
-  const year = query.get('year') || '2022';
+  const year = query.get('year') || '2024';
   const kind = query.get('kind') || 'ipt';
   const [num, setNum] = useState(query.get('num') || '01');
   const [questionData, setQuestionData] = useState(null);
@@ -19,20 +19,28 @@ function Question2() {
   const [result, setResult] = useState(null);
 
   useEffect(() => {
-    const fetchQuestionData = async () => {
+    const fetchQuestion = async () => {
       try {
-        const response = await fetch(`/json/${year}/${kind}-${year}-${num}.json`);
+        const response = await fetch('/hit/json/merged_output.json');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        setQuestionData(data);
+        const question = data.find(
+          (q) =>
+            q.year.toString() === year && q.category === kind && q.problem_number === Number(num)
+        );
+        if (question) {
+          setQuestionData(question);
+        }
       } catch (error) {
-        console.error('Error fetching question data:', error);
+        console.error('Error fetching question:', error);
       }
     };
 
-    fetchQuestionData();
+    fetchQuestion();
+    setSelectedAnswers([]);
+    setResult(null);
   }, [year, kind, num]);
 
   const handleAnswerChange = (event) => {
@@ -126,6 +134,7 @@ function Question2() {
                         className="btn-check"
                         id={key}
                         value={key.replace('select', '')}
+                        checked={selectedAnswers.includes(key.replace('select', ''))}
                         onChange={handleAnswerChange}
                         autoComplete="off"
                       />
@@ -155,11 +164,11 @@ function Question2() {
                 <button
                   type="button"
                   className="btn btn-secondary"
-                  onClick={() =>
-                    navigate(
-                      `/Question2?year=${year}&kind=${kind}&num=${formatNum(Number(num) - 1)}`
-                    )
-                  }
+                  onClick={() => {
+                    const prevNum = formatNum(Number(num) - 1);
+                    setNum(prevNum);
+                    navigate(`/Question2?year=${year}&kind=${kind}&num=${prevNum}`);
+                  }}
                   disabled={num <= 1}
                 >
                   前の問題
@@ -168,13 +177,11 @@ function Question2() {
                   type="button"
                   className="btn btn-secondary"
                   onClick={() => {
+                    const nextNum = formatNum(Number(num) + 1);
                     setSelectedAnswers([]);
                     setResult(null);
-                    setQuestionData(null);
-                    setNum(formatNum(Number(num) + 1));
-                    navigate(
-                      `/Question2?year=${year}&kind=${kind}&num=${formatNum(Number(num) + 1)}`
-                    );
+                    setNum(nextNum);
+                    navigate(`/Question2?year=${year}&kind=${kind}&num=${nextNum}`);
                   }}
                 >
                   次の問題

@@ -19,6 +19,7 @@ function Main() {
         <Router>
           <Routes>
             <Route path="/" element={<App />} />
+            <Route path="/hit" element={<App />} />
             <Route path="/Question" element={<Question />} />
             <Route path="/Question2" element={<Question2 />} />
           </Routes>
